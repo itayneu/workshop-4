@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Async Game</title>
-</head>
-<body>
+  </head>
+  <body>
     <script src="main.js"></script>
-</body>
+    <button onclick="game.createUser('Itay Neuberger')">Create User</button>
+    <button
+      onclick="game.addToQABank('how many screens are in the class?', '2')"
+    >
+      Add Question
+    </button>
+    <button onclick="game.getAllQuestions()">Get All Questions</button>
+    <button onclick="game.answerQuestion(1, 1)">Answer Question</button>
+    <button onclick="game.getAnswerSubmissions()">
+      Get Answer Submissions
+    </button>
+    <button onclick="game.getUsers()">Get Users</button>
+    <button onclick="game.calculateUserScores()">Calculate User Scores</button>
+  </body>
 </html>
